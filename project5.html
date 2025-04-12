@@ -1,0 +1,204 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GadgetZone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .brand-primary {
+            color:brown;
+            
+        }
+        .brand-secondary {
+            color: #d3cac8;
+        }
+        .btn-custom {
+            background-color:brown;
+            color: #fff;
+            border: solid;
+        }
+        .btn-custom:hover {
+            background-color: #ff6347;
+            color: #fff;
+        }
+        .button{
+            background-color:brown;
+            color: #fff;
+            border-color:#fff;
+            padding: 1;
+        
+        }
+        .button1{
+
+            background-color:lightcyan;
+            color: black;
+            border-color:#fff;
+            padding: 1;
+        }
+        .nav-link{
+            color:brown;
+            
+        }
+    
+        footer {
+            background-color:brown;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand brand-primary" href="#">GadgetZone</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav><!-- Home Section -->
+    <section id="home" class="py-5 text-center bg-light" style="background-image: url('data:image/jpeg;base64,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'); background-size: cover; background-position: center;">
+        <div class="container">
+            <h1 class="brand-primary">Welcome to GadgetZone</h1>
+            <h2 class="lead text-black">Your one-stop shop for the latest electronic gadgets!</h2>
+            <a href="#products" class="btn btn-custom">Explore Products</a>
+        </div>
+    </section>
+
+<!-- Products Section -->
+<section id="products" class="py-5">
+    <div class="container">
+        <h2 class="text-center brand-primary mb-4">Our Products</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="https://plus.unsplash.com/premium_photo-1678099940967-73fe30680949?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c29ueSUyMGhlYWRwaG9uZXxlbnwwfHwwfHx8MA%3D%3D" class="card-img-top" alt="Product 1" width="100" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Head Phones  $90</h5>
+                        <p class="card-text">Headphones are audio devices worn over or in the ears to listen to audio privately.</p>
+                       <button class="button">Buy now</button>
+                       <button class="button1">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1616410011236-7a42121dd981?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aXBob25lfGVufDB8fDB8fHww" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Iphone $130</h5>
+                        <p class="card-text">The iPhone is a smartphone made by Apple that combines a computer, iPod, 
+                            digital camera and cellular phone into one device with a touchscreen interface.</p>
+                            <button class="button">Buy now</button>
+                            <button class="button1">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="https://media.product.which.co.uk/prod/images/original/22a475e555d7-best-laptop-deals.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptops $50</h5>
+                        <p class="card-text">A laptop is a portable, self-contained computer with a built-in screen, keyboard, and pointing device, powered by a rechargeable battery,
+                             and designed for easy carrying and use in various locations. </p>
+                             <button class="button">Buy now</button>
+                             <button class="button1">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="https://trendtronee.ronishainformatics.com/public/assets/app/public/product/1713862561.jpg" class="card-img-top" alt="Product 3" width="100" height="200">
+                    <div class="card-body">
+                        <h5 class="card-title">Camera $100</h5>
+                        <p class="card-text">A digital camera is a device that stores photographs in a digital format, eliminating the need for traditional light-sensitive film</p>
+                             <button class="button">Buy now</button>
+                             <button class="button1">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="https://media3.bsh-group.com/Images/450x/19425132_Siemens_Home_Appliances_Brand_Reshape_Laundry_Care_Washin_Machines_Mobile_Stage_9_16.jpg" class="card-img-top" alt="Product 3" width="100" height="200">
+                    <div class="card-body">
+                        <h5 class="card-title">Washing Machine $45</h5>
+                        <p class="card-text"> Washing machine is a household appliance designed to mechanically clean clothes, linens,
+                             and other fabrics using water and detergent, with options for various wash cycles and settings.</p>
+                             <button class="button">Buy now</button>
+                             <button class="button1">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2021/9/JU/IG/RE/137400930/flat-screen-plasma-television.jpg" class="card-img-top" alt="Product 3" width="100" height="200">
+                    <div class="card-body">
+                        <h5 class="card-title">Television $42</h5>
+                        <p class="card-text">  TV is a telecommunication medium for transmitting moving images and sound, used for entertainment, news, and education,</p>
+                             <button class="button">Buy now</button>
+                             <button class="button1">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Us Section -->
+<section id="about" class="py-5 bg-light">
+    <div class="container">
+        <h1 class="text-center brand-primary mb-4">About Us</h1>
+        <h5 class="text-center">GadgetZone is a fictional brand dedicated to bringing you the best gadgets at unbeatable prices.<br>
+            We are specialized in distribution, wholesales, online retail and retail of choice gadgets, consumer electronics.
+        </h5>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <h1 class="text-center brand-primary mb-4">Contact Us</h1>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-custom">Submit</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; <span id="year"></span> GadgetZone. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
